@@ -83,12 +83,30 @@ def input_employee():
             print("Lỗi: Vui lòng nhập số!")
     return create_employee(emp_id, name, base_salary, work_days)
 
+def show_stats(employees):
+    if not employees:
+        print("\n=> Không có dữ liệu để thống kê!")
+        return
+    
+    # Tính toán các chỉ số theo yêu cầu mục 6 & 8 trong Rubric
+    total_fund = sum(e['total_salary'] for e in employees) # Phép tính Tổng (Sum)
+    count = len(employees)                                  # Phép tính Đếm (Count)
+    avg_salary = total_fund / count                        # Phép tính Trung bình (Average)
+    
+    print("\n" + "="*40)
+    print("        BÁO CÁO THỐNG KÊ")
+    print("="*40)
+    print(f"- Tổng số nhân viên: {count} người")
+    print(f"- Tổng quỹ lương:    {total_fund:,.0f} VNĐ")
+    print(f"- Lương trung bình:  {avg_salary:,.0f} VNĐ")
+    print("="*40)
+
 # --- 6. VÒNG LẶP CHÍNH (MAIN LOOP)  ---
 def main():
     employees = load_from_txt()
     while True:
-        print("\n1. Thêm NV  2. Hiện bảng  3. Tìm kiếm  4. Sắp xếp  5. Xóa NV  0. Thoát")
-        choice = input("Chọn chức năng (0-5): ")
+        print("\n1. Thêm NV  2. Hiện bảng  3. Tìm kiếm  4. Sắp xếp  5. Xóa NV  6. Thống kê  0. Thoát")
+        choice = input("Chọn chức năng (0-6): ")
         if choice == '1':
             employees.append(input_employee())
             save_to_txt(employees)
@@ -100,6 +118,8 @@ def main():
             sort_employees(employees)
         elif choice == '5':
             delete_employee(employees)
+        elif choice == '6':
+            show_stats(employees)
         elif choice == '0':
             save_to_txt(employees)
             print("Đã lưu dữ liệu. Tạm biệt!")
