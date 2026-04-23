@@ -50,10 +50,23 @@ def search_employee(employees):
 
 # Thống kê cơ bản 
 def show_stats(employees):
-    if not employees: return
+    if not employees:
+        print("\nChưa có dữ liệu để thống kê!")
+        return
+    
     total_salary = sum(e['salary'] for e in employees)
     avg_salary = total_salary / len(employees)
-    print(f"\n--- THỐNG KÊ ---")
-    print(f"Tổng số nhân viên: {len(employees)}")
-    print(f"Tổng quỹ lương: {total_salary:,.0f} VNĐ")
-    print(f"Lương trung bình: {avg_salary:,.0f} VNĐ")
+    
+    # Phân nhóm theo mức lương 
+    high_salary = [e for e in employees if e['hso'] >= 5.0]
+    low_salary = [e for e in employees if e['hso'] < 5.0]
+    
+    print("\n" + "="*30)
+    print("      BÁO CÁO THỐNG KÊ")
+    print("="*30)
+    print(f"1. Tổng số nhân viên: {len(employees)}")
+    print(f"2. Tổng quỹ lương:    {total_salary:,.0f} VNĐ")
+    print(f"3. Lương trung bình:  {avg_salary:,.0f} VNĐ")
+    print(f"4. NV lương cao (Hệ số >= 5.0): {len(high_salary)}")
+    print(f"5. NV lương thấp (Hệ số < 5.0): {len(low_salary)}")
+    print("="*30)
