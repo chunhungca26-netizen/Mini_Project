@@ -13,7 +13,7 @@ def main():
             save_employees(employees) # Lưu tự động
         elif choice == '2':    # Chức năng hiển thị nv
             display_employees(employees)
-        elif choice == '3':
+        elif choice == '3':    # Chức năng tìm kiếm 
             search_employee(employees)
         elif choice == '4':
             show_stats(employees)
