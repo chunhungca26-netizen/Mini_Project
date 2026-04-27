@@ -15,7 +15,7 @@ def main():
             display_employees(employees)
         elif choice == '3':    # Chức năng tìm kiếm 
             search_employee(employees)
-        elif choice == '4':
+        elif choice == '4':     # Chức năng thống kê
             show_stats(employees)
         elif choice == '0':
             save_employees(employees)
