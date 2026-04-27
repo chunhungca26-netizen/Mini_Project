@@ -8,7 +8,7 @@ def main():
         print("\n1. Thêm NV  2. Hiện bảng  3. Tìm kiếm  4. Thống kê  0. Thoát")
         choice = input("Chọn chức năng (0-4): ")
         
-        if choice == '1':
+        if choice == '1':      # Chức năng thêm mới
             employees.append(input_employee())
             save_employees(employees) # Lưu tự động
         elif choice == '2':

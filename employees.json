@@ -16,5 +16,11 @@
         "name": "Chu Bảo Hân",
         "hso": 2.6,
         "salary": 4680000.0
+    },
+    {
+        "id": "24s190",
+        "name": "Trần Đức Hiếu ",
+        "hso": 3.0,
+        "salary": 5400000.0
     }
 ]
