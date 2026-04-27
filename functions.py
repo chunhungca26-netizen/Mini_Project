@@ -42,7 +42,7 @@ def display_employees(employees):
         print(f"{emp['id']:<10} | {emp['name']:<25} | {emp['hso']:<8.2f} | {emp['salary']:>15,.0f} VNĐ")
     print("="*65)
 
-# Tìm kiếm nâng cao theo chuỗi con 
+# Tìm kiếm theo chuỗi con 
 def search_employee(employees):
     query = input("Nhập tên hoặc ID muốn tìm (khớp một phần): ").lower()
     results = [e for e in employees if query in e['name'].lower() or query in e['id'].lower()]
