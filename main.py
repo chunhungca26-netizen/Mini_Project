@@ -17,7 +17,7 @@ def main():
             search_employee(employees)
         elif choice == '4':     # Chức năng thống kê
             show_stats(employees)
-        elif choice == '0':
+        elif choice == '0':     # Thoát
             save_employees(employees)
             print("Đã lưu dữ liệu. Tạm biệt!")
             break
