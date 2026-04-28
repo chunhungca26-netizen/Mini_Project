@@ -30,7 +30,7 @@ def input_employee():
     salary = hso * 1800000  # Lương cơ bản giả định
     return {"id": id_nv, "name": name, "hso": hso, "salary": salary}
 
-# Hàm hiển thị bảng định dạng đẹp 
+# Hàm hiển thị bảng định dạng  
 def display_employees(employees):
     if not employees:
         print("\nDanh sách trống!")
