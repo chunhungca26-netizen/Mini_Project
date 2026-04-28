@@ -126,7 +126,7 @@ ID       ㅤ    | Họ và Tên          ㅤ       | Hệ số   |
 
 **14.  Quá trình làm việc (Workflow & Git)**
 
-    Sử dụng Git để quản lý phiên bản với hơn 10 lần Commit (Atomic Commits). Mỗi lần thêm một tính năng hoặc sửa một lỗi nhỏ đều được ghi nhận lại minh bạch. Áp dụng quy tắc Indentation và Comment rõ ràng để mã nguồn dễ đọc nhất cho người khác khi tiếp cận.
+    Sử dụng Git để quản lý phiên bản với hơn 20 lần Commit (Atomic Commits). Mỗi lần thêm một tính năng hoặc sửa một lỗi nhỏ đều được ghi nhận lại minh bạch. Áp dụng quy tắc Indentation và Comment rõ ràng để mã nguồn dễ đọc nhất cho người khác khi tiếp cận.
 
 ----------------------------------------------------------------------------------------------------
 
