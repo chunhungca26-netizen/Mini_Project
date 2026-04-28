@@ -14,7 +14,7 @@ Dự án này là một ứng dụng quản lý nhân sự hoàn chỉnh chạy 
    - Đảm bảo dữ liệu được lưu trữ để tái sử dụng cho các lần chạy sau.
    - Thực hành tư duy lập trình mô-đun và tổ chức mã nguồn sạch sẽ.
    
-
+ 
 **4. Các file trong dự án**
 
      - main.py: Bộ điều phối chính (Controller). Chứa vòng lặp tương tác người dùng và điều hướng các chức năng.
