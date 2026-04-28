@@ -1,6 +1,5 @@
 **1.Dự án Quản lý nhân viên và Tiền lương (Topic 8)**
-Sinh viên thực hiện: Chu Thị Nhung
-
+    Sinh viên thực hiện: Chu Thị Nhung
 
 **2.  Giới thiệu dự án**
 
@@ -8,8 +7,7 @@ Dự án này là một ứng dụng quản lý nhân sự hoàn chỉnh chạy 
 
 
 **3. Mục tiêu dự án**
-  
-
+ 
  - Giúp nhà quản lý theo dõi thông tin nhân viên và bảng lương một cách chính xác.
    - Tự động hóa việc tính lương dựa trên hệ số và lương cơ bản.
    - Hỗ trợ ra quyết định thông qua các số liệu thống kê tài chính.
@@ -71,7 +69,7 @@ Plaintext
 Người dùng có thể nhập một phần tên để tìm nhân viên. 
 Ví dụ: nhập "Chu" sẽ tìm thấy "Chu Thị Nhung". Điều này đáp ứng yêu cầu Logic phức tạp.
 
-10. Kiểm tra dữ liệu (Validation)
+**10. Kiểm tra dữ liệu (Validation)**
 
 | Dữ liệu | Quy tắc kiểm tra |
 |:---|:---|
