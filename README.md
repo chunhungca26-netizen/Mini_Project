@@ -1,24 +1,36 @@
-1. Dự án Quản lý nhân viên và Tiền lương (Topic 8)
-    Sinh viên thực hiện: Chu Thị Nhung
+1.Dự án Quản lý nhân viên và Tiền lương (Topic 8)
+
+
+Sinh viên thực hiện: Chu Thị Nhung
+
 
 2.  Giới thiệu dự án
-    Dự án này là một ứng dụng quản lý nhân sự hoàn chỉnh chạy trên giao diện dòng lệnh (CLI). Mục tiêu của dự án là giải quyết bài toán quản lý thông tin nhân viên, tính toán tiền lương tự động và lưu trữ dữ liệu bền vững. Ứng dụng được thiết kế chú trọng vào tính chính xác của dữ liệu (Validation) và cấu trúc mã nguồn sạch (Clean Code).
+
+Dự án này là một ứng dụng quản lý nhân sự hoàn chỉnh chạy trên giao diện dòng lệnh (CLI). Mục tiêu của dự án là giải quyết bài toán quản lý thông tin nhân viên, tính toán tiền lương tự động và lưu trữ dữ liệu bền vững. Ứng dụng được thiết kế chú trọng vào tính chính xác của dữ liệu (Validation) và cấu trúc mã nguồn sạch (Clean Code).
+
 
 3. Mục tiêu dự án
-   - Giúp nhà quản lý theo dõi thông tin nhân viên và bảng lương một cách chính xác.
+  
+
+ - Giúp nhà quản lý theo dõi thông tin nhân viên và bảng lương một cách chính xác.
    - Tự động hóa việc tính lương dựa trên hệ số và lương cơ bản.
    - Hỗ trợ ra quyết định thông qua các số liệu thống kê tài chính.
    - Đảm bảo dữ liệu được lưu trữ để tái sử dụng cho các lần chạy sau.
    - Thực hành tư duy lập trình mô-đun và tổ chức mã nguồn sạch sẽ.
    
+
 4. Các file trong dự án
-    - main.py: Bộ điều phối chính (Controller). Chứa vòng lặp tương tác người dùng và điều hướng các chức năng.
+
+ - main.py: Bộ điều phối chính (Controller). Chứa vòng lặp tương tác người dùng và điều hướng các chức năng.
     - functions.py: Thư viện nghiệp vụ. Chứa toàn bộ logic xử lý: Nhập, Xuất, Tìm kiếm, Sắp xếp, Thống kê, Xóa, Sửa.
     - employees.json: Cơ sở dữ liệu của hệ thống, lưu trữ dữ liệu dưới dạng cấu trúc.
     - README.md: Tài liệu hướng dẫn, báo cáo và tự đánh giá dự án.
 
+
 5. Cấu trúc thư mục dự án
-    Plaintext
+  
+
+Plaintext
     QUAN-LY-LUONG-NHAN-VIEN/
     |-- main.py           (Mã nguồn chính)
     |-- employees.txt    (Cơ sở dữ liệu file văn bản)
@@ -26,7 +38,9 @@
     |-- README.md        (Mô tả và tự đánh giá)
 
 6.  Cấu trúc mã nguồn (Modular Design)
-    Dự án được tổ chức theo kiến trúc mô-đun để dễ dàng bảo trì và mở rộng, tránh tình trạng "Spaghetti Code":
+ 
+
+ Dự án được tổ chức theo kiến trúc mô-đun để dễ dàng bảo trì và mở rộng, tránh tình trạng "Spaghetti Code":
 - main.py: Đóng vai trò là bộ điều phối chính (Controller). Chứa vòng lặp tương tác người dùng và điều hướng các chức năng.
 - functions.py: Thư viện nghiệp vụ. Chứa toàn bộ logic xử lý dữ liệu, các thuật toán tìm kiếm, sắp xếp, thống kê và các hàm đọc/ghi file.
 - employees.json: Cơ sở dữ liệu của hệ thống, lưu trữ thông tin dưới dạng cấu trúc JSON chuyên nghiệp thay vì file văn bản thô.
@@ -45,7 +59,7 @@
 | `show_statistics()` | Tính toán tổng quỹ lương và trung bình |
 | `main()` | Điều khiển luồng chạy chính của ứng dụng |
 
-8.  Chức năng:
+8.  Chức năng
 
 - Thêm nhân viên mới: Nhập ID, họ tên, và hệ số lương với cơ chế kiểm tra lỗi nhập liệu.
 - Hiển thị danh sách: Xuất bảng dữ liệu được căn lề ngay ngắn, dễ quan sát.
